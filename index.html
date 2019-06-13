@@ -1,0 +1,337 @@
+<html>
+
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js.js"></script>
+
+
+
+
+
+ <head>
+	<title>registrar</title>
+	<link rel="stylesheet" href="estilos2.css">
+ </head>
+ <body background=""> 
+
+<header>
+		<nav class="navegacion">
+			<ul class="menu">
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="#">PROBLEM REPORTING</a>
+					<ul class="submenu">
+						<li><a href="#">Problem Reporting 1</a></li>
+						<li><a href="#">Problem Reporting 2 </a></li>
+						<li><a href="#">Problem Reporting 3</a></li>
+						</ul>
+						</li>
+				<li><a href="#">TRAINING</a>
+					<ul class="submenu">
+						<li><a href="#">View Training classes</a></li>
+						<li><a href="#">Training Registration </a></li>
+						<li><a href="#">Request A course </a></li>
+						<li><a href="#">Teach A course </a></li>
+						<li><a href="#">Online training </a></li>
+						<li><a href="#">Video Conference</a></li>
+						<li><a href="#">Find Software Expert </a></li>
+					</ul>
+				</li>
+				<li><a href="#">SOFTWARE</a>
+						<ul class="submenu">
+						<li><a href="#">Software 1</a></li>
+						<li><a href="#">Software 2 </a></li>
+						<li><a href="#">Software 3</a></li>
+						</ul>
+				</li>
+				<li><a href="#">CLASRRON</a>
+					<ul class="submenu">
+						<li><a href="#">Clasrron 1</a></li>
+						<li><a href="#">Clasrron 2 </a></li>
+						<li><a href="#">Clasrron 3</a></li>
+						</ul>
+						</li>
+				
+				<li><a href="#">RESOURCES</a>
+					<ul class="submenu">
+						<li><a href="#">Resources 1</a></li>
+						<li><a href="#">Resources 2 </a></li>
+						<li><a href="#">Resources 3</a></li>
+						</ul>
+						</li>
+				<li><a href="#">OTHER</a><ul class="submenu">
+						<li><a href="#">Other 1</a></li>
+						<li><a href="#">Other 2 </a></li>
+						<li><a href="#">Other 3</a>
+						</li>
+						</ul>
+						</li>
+				<li><a href="#">SEARCH</a><ul class="submenu">
+					
+						<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					</form>
+	
+						</ul>
+						</li>				
+
+			</ul>
+		</nav>
+	</header>
+
+
+
+<div class="container-fluid" >
+
+<table>
+	<tr>
+ 	   	<td><strong><div  width:1500px>
+      <img src="imagenes\undc.png" alt="5px">
+		</div></strong></td>
+		
+		<td><strong><div>
+        		
+		</div></strong></td>
+
+		<td><strong><div width:1500px>
+      <h1 align="center" class="h1">CENTRAL PACIFIC UNIVERSITY</h1>
+	<div align="center">
+	<P align="center"><FONT FACE="times" SIZE="5"><H6> Training Course Registration </H6></FONT></div>
+    </div>
+	</div></strong></td>
+	</tr>  
+</table>
+    <div class="container-fluid">
+     <p  align="left">
+		Complete this to registrer for a training class. Click to view the training calendar. Classes are offered to all faculty and staff on a first come,
+		first served basis. Start by entering your email address and cliick the fFind Employee button. Your name and telephone number will display. You 
+		may change your contact telephone number. Next select the software and level of training. When the level of trining has been changed, the 
+		avarlable courses will display.
+	<P>
+		Place a check mark in front of the course that you would like to enroll inandclick the Submit button. you will receive a registration confirmation 
+		when the request has been processed and a follow-up rerninder with the time and training shorty before start of the course.								
+
+	</p>
+    </div>
+
+
+    <div class="row"></div>
+<div class="container-fluid">
+  <form>
+  <div class="form-row">
+    <div class="form-group col-md-1">
+      <p>E-mail</p>
+    </div>
+    <div class="form-group col-md-4">
+      <input type="email" class="form-control" id="email" placeholder="Email" onblur="validaremail();">
+    </div>
+    <div class="form-group col-md-4 offset-md-2">
+      <button type="button" class="btn btn-primary">Find Employee</button>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-1">
+      <p>First Name</p>
+    </div>
+    <div class="form-group col-md-4">
+      <input type="text" class="form-control" id="firstname"  placeholder="First Name" onblur="validar();">
+    </div>
+    
+    <div class="form-group col-md-1 offset-md-2">
+      <p>Last Name</p>
+    </div>
+    <div class="form-group col-md-3 ">
+      <input type="text" class="form-control" id="lastname" placeholder="Last Name" onblur="validarapellido();">
+    </div>
+  </div>
+  
+  <div class="form-row">
+    <div class="form-group col-md-1">
+      <p>Campus</p>
+    </div>
+    <div class="form-group col-md-4">
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        	<OPTION>Deporte</OPTION>
+  		<OPTION>Investigacion</OPTION>
+  		<OPTION>Desarrollo</OPTION>
+ 		<OPTION>Cultura</OPTION>
+ 		<OPTION>Arte</OPTION>
+      </select>
+    </div>
+    
+    <div class="form-group col-md-1 offset-md-2">
+      <p>Phone</p>
+    </div>
+    <div class="form-group col-md-3 ">
+      <input type="text" class="form-control" id="phone" placeholder="Phone" onblur="validarcelular();">
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-1">
+      <p>Software</p>
+    </div>
+    <div class="form-group col-md-4">
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        	<OPTION>Invisio</OPTION>
+  		<OPTION>ArgoUML</OPTION>
+  		<OPTION>Bizagui</OPTION>
+ 		<OPTION>Enterprise</OPTION>
+ 		<OPTION>Balsamiq</OPTION>
+
+      </select>
+    </div>
+    
+    <div class="form-group col-md-2 offset-md-2">
+      <p>Select the level of training</p>
+    </div>
+    <div class="form-group col-md-2 ">
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        	<OPTION>Basico</OPTION>
+ 		<OPTION>Intermedio</OPTION>
+  		<OPTION>Avanzado</OPTION>
+      </select>
+    </div>
+  </div>
+  
+
+<div class="row">
+    <div class="col-md-30">
+      <img src="imagenes/linea-separadora-png-6.png">
+    </div>
+  </div>
+
+  
+
+<div class="form-row">
+    <div class="form-group col-md-3">
+      Course Title
+    </div>
+
+    <div class="form-group col-md-3">
+      Campus
+    </div>
+
+    <div class="form-group col-md-3">
+      Starting Date
+    </div>
+
+    <div class="form-group col-md-3">
+      Ending Date
+    </div>
+
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">
+            Xxxxxxxxx
+          </label>
+      </div>
+    </div>
+
+    <div class="form-group col-md-3">
+      <p>Xxxxxxxxxxxx</p>
+    </div>
+
+    <div class="form-group col-md-3">
+      dd/mm/yyyy
+    </div>
+
+    <div class="form-group col-md-3">
+      dd/mm/yyyy
+    </div>
+
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">
+            Xxxxxxxxx
+          </label>
+      </div>
+    </div>
+
+    <div class="form-group col-md-3">
+      <p>Xxxxxxxxxxxx</p>
+    </div>
+
+    <div class="form-group col-md-3">
+      dd/mm/yyyy
+    </div>
+
+    <div class="form-group col-md-3">
+      dd/mm/yyyy
+    </div>
+
+  </div>
+
+  
+
+<div class="form-row">
+  <div class="form-group col-md-2 offset-md-4">
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+  <div class="form-group col-md-2 offset-md-1">
+    <button type="submit" class="btn btn-primary">Reset</button>
+  </div>
+</div>
+
+
+
+			
+
+
+
+
+ <head>
+	<title>registrar</title>
+	<link rel="stylesheet" href="estilos2.css">
+ </head>
+ <body background=""> 
+
+<header>
+		<nav class="navegacion" >
+			<ul class="menu" >
+			
+			
+ 			   	<td><strong><div>
+			<div align="center">
+				<img src ="imagenes\undc.png" width="120px" height=120px" ALIGN=lef >
+			</div>
+		</div></strong></td>
+
+		<td><strong><div>
+			<p  align="right"><FONT COLOR="ff0000">
+			Jazmin Lazarte Vicente.
+			
+			</p></FONT>
+		</div></strong></td>
+							
+
+			</ul>
+		</nav>
+
+
+	</header>
+
+
+
+
+</body>
+
+</form>
+</div>
+    			
+				 			  	
+
+</html>
