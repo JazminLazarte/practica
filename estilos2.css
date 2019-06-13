@@ -1,0 +1,146 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+header{
+	width: 100%;
+}
+
+.navegacion{
+	width: 1300px;
+	margin: 30px auto;
+	background: rgba(10, 2, 0  );
+}
+
+.navegacion ul{
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #FFFFFF;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: #35A0CE;
+	transition: all 0.1s;
+}
+
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	background: #333333;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.1s;
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+#cajas{
+	margin: auto;
+	background: rgba(2,2,2,0.2);
+	width:1500px;
+height: 30px;
+}
+
+form {
+    /* S�lo para centrar el formulario a la p�gina */
+    margin: 0 auto;
+    height: 300px;
+    /* Para ver el borde del formulario */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+form div + div {
+    margin-top: 1em;
+}
+
+label {
+    /* Para asegurarse que todos los labels tienen el mismo tama�o y est�n alineados correctamente */
+    display: inline-block;
+    width: 300px;
+    text-align: left;
+
+}
+
+input, textarea {
+    /* Para asegurarse de que todos los campos de texto tienen las mismas propiedades de fuente
+       Por defecto, las areas de texto tienen una fuente con monospace */
+    font: 1em sans-serif;
+
+    /* Para darle el mismo tama�o a todos los campos de texto */
+    width: 200px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* Para armonizar el look&feel del borde en los campos de texto */
+    border: 1px solid #999;
+}
+input:focus, textarea:focus {
+    /* Para dar un peque�o destaque en elementos activos*/
+    border-color: #000;
+}
+
+textarea {
+    /* Para alinear campos de texto multil�nea con sus labels */
+    vertical-align: top;
+
+    /* Para dar suficiente espacio para escribir texto */
+    height: 5em;
+
+    /* Para permitir a los usuarios cambiar el tama�o de cualquier textarea verticalmente
+        No funciona en todos los navegadores */
+    resize: vertical;
+}
+
+.button {
+    /* Para posicionar los botones a la misma posici�n que los campos de texto */
+    padding-left: 100px; /* mismo tama�o a todos los elementos label */
+}
+button {
+    /* Este margen extra representa aproximadamente el mismo espacio que el espacio
+       entre los labels y sus campos de texto */
+    margin-left: 1em;
+}
+
+Button1 {
+    /* Este margen extra representa aproximadamente el mismo espacio que el espacio
+       entre los labels y sus campos de texto */
+   margin-left: 20em;
+}
+.logo{
+    float: right;
+    padding: 10px;
+}
+.logo img{
+    width: 40px;
+    height: 35px;
+}
